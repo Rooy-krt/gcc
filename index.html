@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
-  
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>GCC goodcitizencampaign</title>
@@ -86,6 +85,11 @@
 .header-area .logo img {
   max-height: 50px;
 }
+.typing-animation {
+  border-right: 2px solid #000; /* optional: simulates the typing cursor */
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 /* Donation button styling */
 .header-area .header-right-btn .btn {
@@ -98,6 +102,7 @@
   background: #ccc !important;
   color: #000 !important;
 }
+
 </style>
 
 </head>
@@ -201,48 +206,64 @@
     </div>
 
 
-    <!--? video_start -->
-    <div class="video-area d-flex align-items-center justify-content-center">
-      <div class="video-wrap position-relative">
-        <div class="video-icon">
-          <a class="popup-video btn-icon" href="videos/teule.mp4" style="color: red;"><i class="fas fa-play"></i></a>
-        </div>
-      </div>
-    </div>
-    <!-- video_end -->
   </div>
   <!-- slider Area End-->
 
-  <!--? Visit Our Tailor Start -->
-  <div class="visit-tailor-area fix">
-    <!--Right Contents  -->
-<div class="tailor-offers" style="width: 687px; height: 720px; overflow: hidden; position: relative;">
-  <img src="assets/img/gallery/visit_bg.png" alt="Tailor Offer" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-    <!-- left Contents -->
-    <div class="tailor-details">
-      <span style="color: black;">We Aim At</span>
-      <h2 style="color: red;">Inspiring Responsible Citizens</h2>
-      <p> The Good Citizen Campaign (GCC) is a citizen-led initiative focused on
- raising a new generation of responsible, value-driven citizens—starting with
- children, teens, and youth. It encourages young people to grow in
- character, care for their communities, and love their country.
- By teaching the importance of self-discipline, compassion, and patriotism
- early in life, we lay the foundation for a stronger society. Through everyday
- actions, we inspire positive change—within individuals, communities, and
- the nation. We believe that real change starts with young hearts and minds.
- By developing strong values early, we are shaping a brighter future for
- everyone.</p>
-      <p class="pera-bottom">Being a good citizen starts with you. We encourage young people to grow
- morally, work hard, build good habits, and keep learning—so they can be
- their best every day.</p>
-      <div class="footer-tittles">
-        <p style="color: black;">CEO, Founder</p>
-        <h2 style="color: red;">James Muthiya</h2>
-      </div>
+ <!--? Visit Our Tailor Start -->
+<div class="visit-tailor-area fix">
+  <!-- Right Contents -->
+  <div class="tailor-offers" style="width: 720px; height: 720px; overflow: hidden; position: relative;">
+    <video src="videos/teule.mp4" style="width: 100%; height: 100%; object-fit: contain;" autoplay loop muted playsinline ontimeupdate="if(this.currentTime > 5) this.currentTime = 0;"></video>
+  </div>
+  <!-- left Contents -->
+  <div class="tailor-details">
+    <span style="color: black;">We Aim At</span>
+    <h2 style="color: red;">Inspiring Responsible Citizens</h2>
+    <p>The Good Citizen Campaign (GCC) is a citizen-led initiative focused on
+      raising a new generation of responsible, value-driven citizens—starting with
+      children, teens, and youth. It encourages young people to grow in
+      character, care for their communities, and love their country.
+      By teaching the importance of self-discipline, compassion, and patriotism
+      early in life, we lay the foundation for a stronger society.</p>
+    <p class="pera-bottom">Being a good citizen starts with you. We encourage young people to grow
+      morally, work hard, build good habits, and keep learning—so they can be
+      their best every day.</p>
+    <div class="footer-tittles">
+      <p style="color: black;">CEO, Founder</p>
+      <h2 style="color: red;">James Muthiya</h2>
     </div>
   </div>
-  <!-- Visit Our Tailor End -->
+</div>
+<!-- Visit Our Tailor End -->
+
+<!-- Responsive styling for small devices -->
+<style>
+  @media only screen and (max-width: 768px) {
+    .visit-tailor-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .tailor-offers {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .tailor-offers video {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover !important;
+    }
+
+    .tailor-details {
+      padding: 20px;
+    }
+  }
+</style>
+
+
 
  
 
@@ -263,10 +284,10 @@
                     </div>
                 </div>
                 <div class="right-content">
-                    <!-- img -->
-                    <div class="right-img">
-                        <img src="assets/img/gallery/safe_in.png" alt="">
-                    </div>
+<div class="right-img">
+  <img src="assets/img/gallery/safe_in.png" alt="" style="width: 600px; height: 650px;">
+</div>
+
                     <div class="support-img-cap text-center d-flex">
                         <div class="single-one">
                             <span>950</span>
@@ -281,146 +302,154 @@
             </div>
         </section>
         <!-- About Area End -->
-        <!--? Our Cases Start -->
-        <div class="our-cases-area section-padding30">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-10 col-lg-10 ">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-80">
-                            <h2>Our Programs</h2>
-                            <p class="pl-20 pr-20">To bring our mission to life, the Good Citizen Campaign runs through
- three key programs:</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cases mb-40">
-                            <div class="cases-img">
-                                <img src="assets/img/gallery/case1.png" alt="">
-                            </div>
-                            <div class="cases-caption">
-                                <h3><a href="#"> 1. Leadership Talks</a></h3>
-                                <p>Organized conversations between children, teens, and youth with
- community leaders, national figures, and inspirational individuals from
- various fields. These forums provide mentorship, civic education, and
- real-life stories that motivate responsible action.</p>
-<!-- Progress Bar -->
-<div class="single-skill mb-15">
-  <div class="bar-progress">
-    <div id="bar-kenya" class="barfiller-kenya" style="position: relative; height: 20px; width: 100%; overflow: hidden;">
-      <div class="tipWrap">
-        <span class="tip"></span>
+<!--? Our Cases Start -->
+<div class="our-cases-area section-padding30">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-10 col-lg-10">
+        <!-- Section Tittle -->
+        <div class="section-tittle text-center mb-80">
+          <h2>Our Programs</h2>
+          <p class="pl-20 pr-20">
+            To bring our mission to life, the Good Citizen Campaign runs through
+            three key programs:
+          </p>
+        </div>
       </div>
-      <span class="kenya-fill-bar" data-percentage="70" style="
-        display: block;
-        height: 100%;
-        width: 0%;
-        background: linear-gradient(90deg, #000 0%, #ff0000 33%, #ffffff 66%, #00ff00 100%);
-        animation: fadeInKenyaFill 3s forwards;
-      "></span>
+    </div>
+    <div class="row">
+      <!-- Leadership Talks -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+          <div class="cases-img">
+            <img src="assets/img/gallery/case1.png" alt="Leadership Talks">
+          </div>
+          <div class="cases-caption">
+            
+            <h3 id="heading1" class="typing-animation"><a href="#"></a></h3>
+            <p>
+              Organized conversations between children, teens, and youth with
+              community leaders, national figures, and inspirational individuals from
+              various fields. These forums provide mentorship, civic education, and
+              real-life stories that motivate responsible action.
+            </p>
+            <!-- Progress Bar -->
+            <div class="single-skill mb-15">
+              <div class="bar-progress">
+                <div class="bar-container" data-percentage="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GCC Kids Club -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+          <div class="cases-img">
+            <img src="assets/img/gallery/case2.png" alt="GCC Kids Club">
+          </div>
+          <div class="cases-caption">
+            <h3 id="heading2" class="typing-animation"><a href="#"></a></h3>
+            <p>
+              A dedicated space for younger participants to receive inspirational
+              messages, engage in value-based activities, and connect with role
+              models who help shape their character and ambitions.
+            </p>
+            <!-- Progress Bar -->
+            <div class="single-skill mb-15">
+              <div class="bar-progress">
+                <div class="bar-container" data-percentage="25"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Roll of Honor -->
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+          <div class="cases-img">
+            <img src="assets/img/gallery/case3.png" alt="Roll of Honor">
+          </div>
+          <div class="cases-caption">
+            <h3 id="heading3" class="typing-animation"><a href="#"></a></h3>
+            <p>
+              A celebration of citizenship in action. This includes an online platform and
+              live award ceremonies that document and recognize acts of civic
+              responsibility, community service, leadership, and personal excellence
+              among children and youth.
+            </p>
+            <!-- Progress Bar -->
+            <div class="single-skill mb-15">
+              <div class="bar-progress">
+                <div class="bar-container" data-percentage="50"></div>
+              </div>
+            </div>
+          </div>
+
+
     </div>
   </div>
 </div>
+<!-- Our Cases End -->
 
-<!-- Inline CSS for the fade-in animation -->
+<!-- Inline CSS for the fade-in fill animation -->
 <style>
-@keyframes fadeInKenyaFill {
-  0% {
+  .bar-container {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    background: #e0e0e0;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .bar-fill {
+    position: absolute;
+    height: 100%;
     width: 0%;
+    background: linear-gradient(90deg, #000 0%, #ff0000 33%, #ffffff 66%, #00ff00 100%);
     opacity: 0;
+    border-radius: 10px;
   }
-  50% {
-    opacity: 0.5;
+
+  @keyframes fadeInFill {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      width: var(--target-width);
+      opacity: 1;
+    }
   }
-  100% {
-    width: 70%;
-    opacity: 1;
-  }
-}
 </style>
 
-                                <!-- / progress -->
-                                <div class="prices">
-                                    <p><span></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cases mb-40">
-                            <div class="cases-img">
-                                <img src="assets/img/gallery/case2.png" alt="">
-                            </div>
-                            <div class="cases-caption">
-                                <h3><a href="#">2. GCC Kids Club</a></h3>
-                                <p>A dedicated space for younger participants to receive inspirational
- messages, engage in value-based activities, and connect with role
- models who help shape their character and ambitions. The club
- nurtures early awareness of civic responsibility in a fun and engaging
- way.</p>
-                                <!-- Progress Bar -->
-                              <div class="single-skill mb-15">
-  <div class="bar-progress">
-    <div id="bar-kenya" class="barfiller-kenya" style="position: relative; height: 20px; width: 100%; overflow: hidden;">
-      <div class="tipWrap">
-        <span class="tip"></span>
-      </div>
-      <span class="kenya-fill-bar" data-percentage="25" style="
-        display: block;
-        height: 100%;
-        width: 0%;
-        background: linear-gradient(90deg, #000 0%, #ff0000 33%, #ffffff 66%, #00ff00 100%);
-        animation: fadeInKenyaFill 3s forwards;
-      "></span>
-    </div>
-  </div>
-</div>
-                                <div class="prices">
-                                    <p><span></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-cases">
-                            <div class="cases-img">
-                                <img src="assets/img/gallery/case3.png" alt="">
-                            </div>
-                            <div class="cases-caption">
-                                <h3><a href="#">3. Roll of Honor</a></h3>
-                                <p> A celebration of citizenship in action. This includes an online platform and
- live award ceremonies that document and recognize acts of civic
- responsibility, community service, leadership, and personal excellence
- among children and youth.</p>
-                                <!-- Progress Bar -->
-                            <div class="single-skill mb-15">
-  <div class="bar-progress">
-    <div id="bar-kenya" class="barfiller-kenya" style="position: relative; height: 20px; width: 100%; overflow: hidden;">
-      <div class="tipWrap">
-        <span class="tip"></span>
-      </div>
-      <span class="kenya-fill-bar" data-percentage="50" style="
-        display: block;
-        height: 100%;
-        width: 0%;
-        background: linear-gradient(90deg, #000 0%, #ff0000 33%, #ffffff 66%, #00ff00 100%);
-        animation: fadeInKenyaFill 3s forwards;
-      "></span>
-    </div>
-  </div>
-</div>
-                                <div class="prices">
-                                    <p><span></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Our Cases End -->
+<!-- Staggered animation using JS -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const bars = document.querySelectorAll('.bar-container');
+
+    bars.forEach((bar, index) => {
+      const percentage = bar.getAttribute('data-percentage') + '%';
+      const fill = document.createElement('div');
+      fill.classList.add('bar-fill');
+      fill.style.setProperty('--target-width', percentage);
+
+      bar.appendChild(fill);
+
+      // Delay each bar’s animation
+      setTimeout(() => {
+        fill.style.animation = 'fadeInFill 3s forwards';
+      }, index * 500); // 0.5s delay between each bar
+    });
+  });
+</script>
+
         <!--? Blog Area Start -->
         <section class="home-blog-area pb-padding">
             <div class="container">
@@ -618,6 +647,31 @@ engagement, social responsibility and ethical conduct. </p>
     <script src="./assets/js/bootstrap.min.js"></script>
     <!-- Jquery Mobile Menu -->
     <script src="./assets/js/jquery.slicknav.min.js"></script>
+<script>
+  const headings = [
+    { id: 'heading1', text: '1. Leadership Talks' },
+    { id: 'heading2', text: '2. GCC Kids Club' },
+    { id: 'heading3', text: '3. Roll of Honor' }
+  ];
+
+  let currentHeading = 0;
+
+  function typeHeading(heading, index) {
+    if (index < heading.text.length) {
+      document.getElementById(heading.id).textContent += heading.text.charAt(index);
+      setTimeout(() => typeHeading(heading, index + 1), 100); // typing speed
+    } else {
+      // Delay before moving to the next heading
+      currentHeading++;
+      if (currentHeading < headings.length) {
+        setTimeout(() => typeHeading(headings[currentHeading], 0), 1000); // 1s delay before next heading
+      }
+    }
+  }
+
+  // Start typing the first heading
+  typeHeading(headings[currentHeading], 0);
+</script>
 
     <!-- Jquery Slick , Owl-Carousel Plugins -->
     <script src="./assets/js/owl.carousel.min.js"></script>
